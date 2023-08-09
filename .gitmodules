@@ -1,0 +1,6 @@
+[submodule "i3/.config/i3"]
+	path = i3/.config/i3
+	url = git@github.com:SirNaCl/i3_config.git
+[submodule "nvim/.config/nvim"]
+	path = nvim/.config/nvim
+	url = git@github.com:SirNaCl/nvim_config.git
