@@ -73,6 +73,8 @@ ZSH_THEME="muse"
 plugins=(
     git
     zsh-autosuggestions
+    web-search
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh

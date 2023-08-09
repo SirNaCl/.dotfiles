@@ -3,3 +3,4 @@ alias nvim=".~/app/nvim-linux64/bin/nvim"
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
+alias kb='setxkbmap -layout se'
