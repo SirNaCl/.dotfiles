@@ -35,13 +35,13 @@ return {
     -- place this in one of your configuration file(s)
 
     -- HOP: 
-    f = {
+    t = {
       function() 
         require("hop").hint_words() 
       end,
       desc = "Hop word *this* window",
     },
-    F = {
+    T = {
       function() 
         require("hop").hint_words({ 
           multi_windows = true
@@ -52,9 +52,19 @@ return {
 
     -- COMPILER:
     -- Open compiler
-    ['<leader>ko'] = {"<cmd>CompilerOpen<cr>", desc="Open Compiler", noremap = true, silent = true },
+    ['<leader>ko'] = {
+      "<cmd>CompilerOpen<cr>", 
+      desc="Open Compiler", 
+      noremap = true, 
+      silent = true 
+    },
     -- Toggle compiler results
-    ['<leader>kt'] = {"<cmd>CompilerToggleResults<cr>", desc="Toggle compiler results",  noremap = true, silent = true },
+    ['<leader>kt'] = {
+      "<cmd>CompilerToggleResults<cr>", 
+      desc="Toggle compiler results",  
+      noremap = true, 
+      silent = true
+    },
     ['<leader>k'] = { name = "Compiler"}
   },
   t = {
