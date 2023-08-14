@@ -32,6 +32,30 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- place this in one of your configuration file(s)
+
+    -- HOP: 
+    f = {
+      function() 
+        require("hop").hint_words() 
+      end,
+      desc = "Hop word *this* window",
+    },
+    F = {
+      function() 
+        require("hop").hint_words({ 
+          multi_windows = true
+        }) 
+      end,
+      desc = "Hop word *all* windows",
+    },
+
+    -- COMPILER:
+    -- Open compiler
+    ['<leader>ko'] = {"<cmd>CompilerOpen<cr>", desc="Open Compiler", noremap = true, silent = true },
+    -- Toggle compiler results
+    ['<leader>kt'] = {"<cmd>CompilerToggleResults<cr>", desc="Toggle compiler results",  noremap = true, silent = true },
+    ['<leader>k'] = { name = "Compiler"}
   },
   t = {
     -- setting a mapping to false will disable it
