@@ -52,6 +52,11 @@ return {
     servers = {
       -- "pyright"
     },
+    config = {
+      clangd = {
+        cmd = {"clangd", "--query-driver=**-poky-*"}
+      }
+    }
   },
 
   -- Configure require("lazy").setup() options
