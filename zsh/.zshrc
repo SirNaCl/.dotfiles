@@ -72,9 +72,9 @@ ZSH_THEME="muse"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    zsh-autosuggestions
+    # zsh-autosuggestions
     web-search
-    zsh-syntax-highlighting
+    # zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -125,6 +125,11 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # some more ls aliases
 if [ -f ~/.zsh_aliases ]; then
 	. ~/.zsh_aliases
+fi
+
+# local additions to zsh
+if [ -f ~/.zsh_local ]; then
+	. ~/.zsh_local
 fi
 
 . "$HOME/.cargo/env"
