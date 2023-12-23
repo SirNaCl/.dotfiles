@@ -119,6 +119,12 @@ zstyle :compinstall filename '/home/parallels/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+ 
+# Pyenv:
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
