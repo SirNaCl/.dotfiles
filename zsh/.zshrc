@@ -139,3 +139,6 @@ if [ -f ~/.zsh_local ]; then
 fi
 
 . "$HOME/.cargo/env"
+
+# Created by `pipx` on 2023-12-18 13:10:17
+export PATH="$PATH:/home/emilge/.local/bin"
