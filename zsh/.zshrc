@@ -140,5 +140,11 @@ fi
 
 . "$HOME/.cargo/env"
 
-# Created by `pipx` on 2023-12-18 13:10:17
-export PATH="$PATH:/home/emilge/.local/bin"
+# Custom QoL functions
+ei() {
+    python -m venv .venv && ea
+}
+
+ea() {
+    source .venv/bin/activate
+}

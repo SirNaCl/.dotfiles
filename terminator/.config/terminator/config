@@ -1,7 +1,8 @@
 [global_config]
   focus = system
   borderless = True
-  inactive_color_offset = 0.6504854368932039
+  inactive_color_offset = 0.8584070796460177
+  putty_paste_style = True
 [keybindings]
 [profiles]
   [[default]]
@@ -12,6 +13,8 @@
     foreground_color = "#c6d0f5"
     show_titlebar = False
     scrollbar_position = hidden
+    scrollback_lines = 1000
+    scrollback_infinite = True
     use_system_font = False
     copy_on_selection = True
 [layouts]
