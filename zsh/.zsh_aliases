@@ -1,5 +1,5 @@
 alias ll='ls -l'
-alias la='ls -A'
+alias la='ls -lA'
 alias l='ls -CF'
 alias kb='setxkbmap -layout se'
 alias ..='cd ..'
@@ -8,3 +8,9 @@ alias lock='i3lock -i /home/emilge/.dotfiles/i3/.config/i3/wallpaper.png -t'
 alias settings='gnome-control-center'
 alias home='cd $home'
 alias py='python'
+alias i3conf='nvim ~/.dotfiles/i3/.config/i3/config'
+alias yoink="xclip <"
+alias yeet="xclip -o"
+alias new="alacritty&"
+alias src="source $HOME/.zshrc"
+alias lg="lazygit"
