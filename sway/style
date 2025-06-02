@@ -1,0 +1,50 @@
+font pango: Hasklug Nerd Font Mono 11
+
+# Change wallpaper
+# output * background /home/$USER/.config/sway/wallpaper.png fill
+output * background ../walls/clearing.png fill
+
+#Color shemes for windows 
+set $bgcolor         #52566a
+set $in-bgcolor      #292c3c
+set $text            #c6d0f5
+set $u-bgcolor       #ff0000
+set $in-text         #a5adce
+set $lavender        #babbf1
+set $lavender-dark   #7a7bb1
+set $green           #a6d189
+set $teal            #81c8be
+set $indicator       $lavender
+set $focused-ws      #523d6480
+set $bar-color       #523d640D
+
+set $opacity 50
+set $in-opacity 00
+
+#                       border          background              text            indicator    child border
+client.focused          $lavender       $lavender-dark$opacity  $text           $teal     $lavender
+client.unfocused        $lavender-dark  $in-bgcolor$opacity     $in-text        $in-bgcolor  $lavender-dark
+client.focused_inactive $lavender-dark  $in-bgcolor$in-opacity  $in-text        $in-bgcolor  $lavender-dark
+client.urgent           $u-bgcolor      $u-bgcolor$opacity      $text           $u-bgcolor 
+
+smart_corner_radius disable
+corner_radius 7
+
+smart_borders off
+default_border pixel 2
+
+smart_gaps on
+gaps {
+  inner 15
+}
+
+title_align center
+titlebar_separator disable
+titlebar_padding 8
+
+default_dim_inactive 0.15
+
+blur_radius 3
+blur_passes 1
+blur enable
+blur_xray enable

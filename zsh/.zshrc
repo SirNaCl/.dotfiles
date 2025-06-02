@@ -72,9 +72,9 @@ ZSH_THEME="muse"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    # zsh-autosuggestions
-    web-search
-    # zsh-syntax-highlighting
+    zsh-autosuggestions
+    # web-search
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -138,7 +138,7 @@ if [ -f ~/.zsh_local ]; then
 	. ~/.zsh_local
 fi
 
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
 # Custom QoL functions
 ei() {

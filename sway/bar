@@ -1,0 +1,21 @@
+include style
+
+bar {
+        swaybar_command waybar
+        # status_command i3status -c /home/$USER/.config/i3/i3status/i3status.conf
+        #font pango: Hasklug Nerd Font Mono 13
+	#colors {
+        #        background $bgcolor$in-opacity
+        #        separator $text
+        #        statusline $text
+        #        #                       border          background      text
+        #        focused_workspace       $in-bgcolor     $lavender       $in-bgcolor
+        #        inactive_workspace      $lavender       $in-bgcolor     $lavender
+        #        urgent_workspace        $u-bgcolor      $u-bgcolor      $text
+        #}
+	# swaybar_command i3bar --transparency
+	#tray_output none
+	# mode hide
+	#position top
+	# gaps 5
+}

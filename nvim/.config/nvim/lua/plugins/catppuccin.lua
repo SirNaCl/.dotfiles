@@ -3,6 +3,8 @@ return {
   name = "catppuccin",
   lazy = false,
   config = function()
-    require("catppuccin").setup {}
+    require("catppuccin").setup({
+      transparent_background = true,
+    })
   end,
 }

@@ -1,0 +1,14 @@
+general.import = [
+  "~/.config/alacritty/catppuccin-frappe.toml"
+]
+
+[font]
+normal = { family = "Hasklug Nerd Font Mono", style = "Medium"}
+size = 12
+
+[mouse]
+hide_when_typing = true
+
+[window]
+decorations = "None"
+opacity = 0.5

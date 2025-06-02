@@ -1,0 +1,29 @@
+include bindings
+include style
+include bar
+
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# screen before suspend. Use loginctl lock-session to lock your screen.
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id nm-applet
+
+set $refresh_i3status killall -SIGUSR1 i3status
+
+# Change Resolution - Get displayname using "xrand | grep -w 'connected'"
+exec_always xrandr --output eDP-1 --mode 1920x1080
+
+# announce a running sway session to systemd
+exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+
+
+# Transparency with picom compositor
+exec_always picom -f
+
+mouse_warping container
+
+input 1:1:AT_Translated_Set_2_keyboard xkb_options "caps:swapescape"
